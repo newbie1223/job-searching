@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="calculator.js"></script>
+    <title>電卓</title>
+</head>
+<body>
+    <h2>電卓</h2>
+    <table>
+        <input type="text" id="display" disabled>
+        <tr>
+            <td></td>
+            <td><input type="button" value="7" onclick="appendNumber('7')"></td>
+            <td><input type="button" value="8" onclick="appendNumber('8')"></td>
+            <td><input type="button" value="9" onclick="appendNumber('9')"></td>
+            <td><input type="button" value="/" onclick="appendOperator('/')"></td>
+            <td><input type="button" value="*" onclick="appendOperator('*')"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="4" onclick="appendNumber('4')"></td>
+            <td><input type="button" value="5" onclick="appendNumber('5')"></td>
+            <td><input type="button" value="6" onclick="appendNumber('6')"></td>
+            <td><input type="button" value="-" onclick="appendOperator('-')"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="1" onclick="appendNumber('1')"></td>
+            <td><input type="button" value="2" onclick="appendNumber('2')"></td>
+            <td><input type="button" value="3" onclick="appendNumber('3')"></td>
+            <td><input type="button" value="+" onclick="appendOperator('+')"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="button" value="0" onclick="appendNumber('0')"></td>
+            <td><input type="button" value="." onclick="appendDecimal()"></td>
+            <td><input type="button" value="=" onclick="calculate()"></td>
+            <td><input type="button" value="C" onclick="clearDisplay()"></td>
+        </tr>
+    </table>
+</body>
+</html>
